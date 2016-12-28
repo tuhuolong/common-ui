@@ -1,7 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="CommonCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/common_checkbox</item>
+    <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box</item>
         <item name="android:text">@null</item>
         <item name="android:layout_width">18dp</item>
         <item name="android:layout_height">18dp</item>

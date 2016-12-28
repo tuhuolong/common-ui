@@ -63,7 +63,7 @@
 
     <CheckBox
         android:id="@+id/settings_item_checkbox"
-        style="@style/CommonCheckbox"
+        style="@style/Checkbox"
         android:layout_gravity="center_vertical"
         android:clickable="false" />
 
