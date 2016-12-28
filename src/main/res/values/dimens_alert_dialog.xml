@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_dialog_top_indent">@dimen/dialog_common_padding</dimen>
+    <dimen name="alert_dialog_top_panel_margin_bottom">@dimen/dialog_top_panel_margin_bottom</dimen>
+    <dimen name="alert_dialog_top_panel_padding">25dp</dimen>
+    <dimen name="alert_dialog_content_panel_margin_bottom">22dp</dimen>
+    <dimen name="alert_dialog_content_panel_message_padding">23dp</dimen>
+    <dimen name="alert_dialog_custom_panel_padding_bottom">20dp</dimen>
+    <dimen name="alert_dialog_button_panel_padding_vertical">23dp</dimen>
+    <dimen name="alert_dialog_button_panel_padding_horizontal">23dp</dimen>
+    <dimen name="alert_dialog_button_text_size">16sp</dimen>
+    <dimen name="alert_dialog_content_margin">33dp</dimen>
+    <dimen name="alert_dialog_item_height">45dp</dimen>
+    <dimen name="alert_dialog_item_padding_horizontal">23dp</dimen>
+    <dimen name="alert_dialog_message_text_size">13sp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dialog_common_padding">23dp</dimen>
+    <dimen name="dialog_title_font_size">14sp</dimen>
+    <dimen name="dialog_msg_font_size">12sp</dimen>
+    <dimen name="dialog_button_font_size">13sp</dimen>
+    <dimen name="dialog_top_panel_margin_bottom">22dp</dimen>
+    <dimen name="dialog_button_padding_top">22dp</dimen>
+    <dimen name="dialog_input_margin_bottom">3dp</dimen>
+    <dimen name="dialog_input_padding_left">10dp</dimen>
+    <dimen name="dialog_input_padding_right">10dp</dimen>
+    <dimen name="dialog_input_title_font_size">12sp</dimen>
+    <dimen name="dialog_input_title_padding_bottom">10dp</dimen>
+    <dimen name="dialog_list_item_height">45dp</dimen>
+    <dimen name="dialog_list_padding_bottom">3dp</dimen>
+    <dimen name="dialog_list_item_title_font_size">14sp</dimen>
+    <dimen name="dialog_list_item_content_padding_left">23dp</dimen>
+    <dimen name="dialog_list_item_content_padding_right">23dp</dimen>
+    <dimen name="dialog_list_item_indicator_padding_left">11dp</dimen>
+    <dimen name="dialog_progress_content_padding">23dp</dimen>
+    <dimen name="dialog_progress_title_font_size">14sp</dimen>
+    <dimen name="dialog_progress_subtitle_font_size">12sp</dimen>
+    <dimen name="dialog_progress_line_padding">13dp</dimen>
+    <dimen name="dialog_share_padding_left">23dp</dimen>
+    <dimen name="dialog_share_padding_right">23dp</dimen>
+    <dimen name="dialog_share_padding_top">14dp</dimen>
+    <dimen name="dialog_share_padding_bottom">10dp</dimen>
+    <dimen name="dialog_share_icon_space">19dp</dimen>
+
+</resources>

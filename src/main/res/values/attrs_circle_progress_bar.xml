@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="max" format="integer" />
+        <attr name="paint_width" format="integer" />
+        <attr name="paint_color" format="integer" />
+        <attr name="inside_indent" format="integer" />
+    </declare-styleable>
+
+</resources>

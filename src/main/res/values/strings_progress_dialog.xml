@@ -1,0 +1,4 @@
+<resources>
+    <string name="progress_dialog_cancel">取消</string>
+    <string name="progress_dialog_loading">载入中</string>
+</resources>
