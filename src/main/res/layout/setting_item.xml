@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_item_default_bg"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/settings_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/setting_item_icon_selected"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/settings_item_icon"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="27dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settings_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/setting_item_default_title_text_color_normal"
+            android:textSize="@dimen/setting_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/settings_item_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/setting_item_default_subtitle_text_color"
+            android:textSize="@dimen/setting_item_subtitle_text_size" />
+    </LinearLayout>
+
+    <com.chenhao.lib.commonui.widget.SwitchButton
+        android:id="@+id/settings_item_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <CheckBox
+        android:id="@+id/settings_item_checkbox"
+        style="@style/CommonCheckbox"
+        android:layout_gravity="center_vertical"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/settings_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="@color/setting_item_default_subtitle_text_color"
+        android:textSize="@dimen/setting_item_subtitle_text_size"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/settings_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/setting_item_icon_right_more" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

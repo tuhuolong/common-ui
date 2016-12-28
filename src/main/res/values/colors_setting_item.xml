@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="setting_item_default_bg">#ffffffff</color>
+    <color name="setting_item_default_title_text_color_normal">#333333</color>
+    <color name="setting_item_default_title_text_color_selected">#ff0bb58b</color>
+    <color name="setting_item_default_subtitle_text_color">#999999</color>
+</resources>

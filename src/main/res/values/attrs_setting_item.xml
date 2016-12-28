@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="SettingsItem">
+        <attr name="item_icon" format="reference" />
+        <attr name="item_title" format="string" />
+        <attr name="item_subtitle" format="string" />
+        <attr name="item_value" format="string" />
+        <attr name="item_select" format="boolean" />
+        <attr name="item_line_no_margin" format="boolean" />
+        <attr name="item_line_hidden" format="boolean" />
+        <attr name="item_type" format="enum">
+            <enum name="type_none" value="0" />
+            <enum name="type_arrow" value="1" />
+            <enum name="type_switch" value="2" />
+            <enum name="type_select" value="3" />
+            <enum name="type_check" value="4" />
+        </attr>
+    </declare-styleable>
+
+</resources>
