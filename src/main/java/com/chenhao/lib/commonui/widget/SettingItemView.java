@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class SettingItemView extends FrameLayout
         implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
     TextView mTitleTextView;
     TextView mSubTitleTextView;
+    TextView mItemIndicator;
     TextView mValueTextView;
     SwitchButton mSwitchButton;
     CheckBox mSettingsItemCheckbox;
@@ -59,6 +61,7 @@ public class SettingItemView extends FrameLayout
 
         mTitleTextView = (TextView) itemView.findViewById(R.id.settings_item_title);
         mSubTitleTextView = (TextView) itemView.findViewById(R.id.settings_item_sub_title);
+        mItemIndicator = (TextView) itemView.findViewById(R.id.setting_item_indicator);
         mSwitchButton = (SwitchButton) itemView.findViewById(R.id.settings_item_switch_btn);
         mSettingsItemCheckbox = (CheckBox) itemView.findViewById(R.id.settings_item_checkbox);
         mOnclickImageView = (ImageView) itemView.findViewById(R.id.settings_item_arrow);
@@ -67,20 +70,35 @@ public class SettingItemView extends FrameLayout
         mSettingsItemIcon = (ImageView) itemView.findViewById(R.id.settings_item_icon);
         mTitleContainer = itemView.findViewById(R.id.title_container);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SettingsItem, 0, 0);
-        int iconResId = a.getResourceId(R.styleable.SettingsItem_item_icon, 0);
-        String title = a.getString(R.styleable.SettingsItem_item_title);
-        String subTitle = a.getString(R.styleable.SettingsItem_item_subtitle);
-        String value = a.getString(R.styleable.SettingsItem_item_value);
-        mType = a.getInt(R.styleable.SettingsItem_item_type, 1);
-        boolean isItemLineNoMargin = a.getBoolean(R.styleable.SettingsItem_item_line_no_margin,
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SettingItem, 0, 0);
+        int iconResId = a.getResourceId(R.styleable.SettingItem_item_icon, 0);
+        String title = a.getString(R.styleable.SettingItem_item_title);
+        int titleSize = a.getDimensionPixelSize(R.styleable.SettingItem_item_title_textSize,
+                (int) mTitleTextView.getTextSize());
+        String subTitle = a.getString(R.styleable.SettingItem_item_subtitle);
+        int subTitleSize = a.getDimensionPixelSize(R.styleable.SettingItem_item_subtitle_textSize,
+                (int) mSubTitleTextView.getTextSize());
+        String item_indicator_text = a.getString(R.styleable.SettingItem_item_indicator_text);
+        int item_indicator_background = a
+                .getResourceId(R.styleable.SettingItem_item_indicator_background, 0);
+        String value = a.getString(R.styleable.SettingItem_item_value);
+        int valueTextSize = a.getDimensionPixelSize(R.styleable.SettingItem_item_value_textSize,
+                (int) mValueTextView.getTextSize());
+        mType = a.getInt(R.styleable.SettingItem_item_type, 1);
+        boolean isItemLineNoMargin = a.getBoolean(R.styleable.SettingItem_item_line_no_margin,
                 false);
-        mSelected = a.getBoolean(R.styleable.SettingsItem_item_select, false);
-        boolean isItemLineHidden = a.getBoolean(R.styleable.SettingsItem_item_line_hidden, false);
+        mSelected = a.getBoolean(R.styleable.SettingItem_item_select, false);
+        boolean isItemLineHidden = a.getBoolean(R.styleable.SettingItem_item_line_hidden, false);
+
+        mTitleTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, titleSize);
+        mSubTitleTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, subTitleSize);
+        mValueTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, valueTextSize);
 
         setIcon(iconResId);
         setTitle(title);
         setSubTitle(subTitle);
+        setIndicatorText(item_indicator_text);
+        setIndicatorBackground(item_indicator_background);
         setValue(value);
         setType(mType);
 
@@ -157,6 +175,21 @@ public class SettingItemView extends FrameLayout
         } else {
             mSubTitleTextView.setText(str);
             mSubTitleTextView.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void setIndicatorText(String indicatorText) {
+        if (TextUtils.isEmpty(indicatorText)) {
+            mItemIndicator.setVisibility(View.GONE);
+        } else {
+            mItemIndicator.setVisibility(View.VISIBLE);
+        }
+        mItemIndicator.setText(indicatorText);
+    }
+
+    public void setIndicatorBackground(int resId) {
+        if (resId > 0) {
+            mItemIndicator.setBackgroundResource(resId);
         }
     }
 

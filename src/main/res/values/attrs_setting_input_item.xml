@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingItemInput">
+        <attr name="item_input_title" format="string" />
+        <attr name="item_input_title_textSize" format="dimension" />
+        <attr name="item_input_hint" format="string" />
+        <attr name="item_input_text" format="string" />
+        <attr name="item_input_textSize" format="dimension" />
+        <attr name="item_input_line_no_margin" format="boolean" />
+        <attr name="item_input_line_hidden" format="boolean" />
+        <attr name="item_input_type" format="enum">
+            <enum name="type_none" value="0" />
+            <enum name="type_arrow" value="1" />
+        </attr>
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+    </declare-styleable>
+
+</resources>

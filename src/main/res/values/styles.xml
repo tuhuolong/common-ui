@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+
+    <style name="TextAppearance.EditText">
+        <item name="android:textColor">@color/edit_text_primary_text</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Widget"></style>
+
+
+    <style name="Widget.EditText" parent="android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/TextAppearance.EditText</item>
+        <item name="android:background">@drawable/edit_text_search_input_bg</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">#cccccc</item>
+        <item name="android:textColor">@color/class_V</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">37dp</item>
+    </style>
+
+</resources>

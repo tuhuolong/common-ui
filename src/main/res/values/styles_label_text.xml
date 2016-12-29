@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LabelText">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_11sp</item>
+    </style>
+
+    <style name="LabelText.Red">
+        <item name="android:background">@drawable/label_text_red</item>
+    </style>
+
+    <style name="LabelText.Gray">
+        <item name="android:background">@drawable/label_text_gray</item>
+    </style>
+
+    <style name="LabelText.Yellow">
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:background">@drawable/label_text_yellow</item>
+    </style>
+
+</resources>

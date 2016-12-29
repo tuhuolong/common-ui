@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
-    <declare-styleable name="SettingsItem">
+    <declare-styleable name="SettingItem">
         <attr name="item_icon" format="reference" />
         <attr name="item_title" format="string" />
+        <attr name="item_title_textSize" format="dimension" />
         <attr name="item_subtitle" format="string" />
+        <attr name="item_subtitle_textSize" format="dimension" />
+        <attr name="item_indicator_text" format="string" />
+        <attr name="item_indicator_background" format="reference" />
         <attr name="item_value" format="string" />
+        <attr name="item_value_textSize" format="dimension" />
         <attr name="item_select" format="boolean" />
         <attr name="item_line_no_margin" format="boolean" />
         <attr name="item_line_hidden" format="boolean" />

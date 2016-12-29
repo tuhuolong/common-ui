@@ -1,0 +1,26 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--导航标题栏-->
+    <style name="TitleBarText" parent="TitleText" />
+    <!--主标题-->
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/title_bar_title_text_size</item>
+        <item name="android:textColor">@color/title_bar_title_text_color</item>
+    </style>
+    <!--副标题-->
+    <style name="SubTitleText">
+        <item name="android:textSize">@dimen/title_bar_sub_title_text_size</item>
+        <item name="android:textColor">@color/title_bar_sub_title_text_color</item>
+    </style>
+    <!--主要辅助内容-->
+    <style name="PrimarySubTitleText">
+        <item name="android:textSize">@dimen/font_size_11sp</item>
+        <item name="android:textColor">@color/title_bar_primary_sub_title_text_color</item>
+    </style>
+    <!--次要辅助内容-->
+    <style name="SecondarySubTitleText">
+        <item name="android:textSize">@dimen/font_size_11sp</item>
+        <item name="android:textColor">@color/title_bar_secondary_sub_title_text_color</item>
+    </style>
+
+</resources>
