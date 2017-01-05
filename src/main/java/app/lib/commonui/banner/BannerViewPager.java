@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.banner;
+package app.lib.commonui.banner;
 
 import android.content.Context;
 import android.os.Handler;

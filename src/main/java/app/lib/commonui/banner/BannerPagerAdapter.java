@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.banner;
+package app.lib.commonui.banner;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -7,11 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.chenhao.lib.commonui.R;
-import com.chenhao.lib.commonui.banner.util.FrescoUtil;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
+
+import app.lib.commonui.R;
+import app.lib.commonui.banner.util.FrescoUtil;
 
 /**
  * Created by chenhao on 16/12/28.

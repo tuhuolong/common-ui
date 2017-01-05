@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.dialog;
+package app.lib.commonui.dialog;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.chenhao.lib.commonui.R;
-import com.chenhao.lib.commonui.widget.CircleProgressBar;
-
 import java.text.NumberFormat;
+
+import app.lib.commonui.R;
+import app.lib.commonui.widget.CircleProgressBar;
 
 /**
  * Created by chenhao on 16/12/28.

@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.widget;
+package app.lib.commonui.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -21,8 +21,8 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.widget.CheckBox;
 
-import com.chenhao.lib.common.util.AndroidApiHelper;
-import com.chenhao.lib.commonui.R;
+import app.lib.common.util.AndroidApiHelper;
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.
@@ -144,8 +144,10 @@ public class SwitchButton extends CheckBox {
         mTapThreshold = ViewConfiguration.get(context).getScaledTouchSlop() / 2;
 
         mFrame = getResources().getDrawable(R.drawable.switch_button_sliding_btn_frame_light);
-        mSliderOn = getResources().getDrawable(R.drawable.switch_button_sliding_btn_slider_on_light);
-        mSliderOff = getResources().getDrawable(R.drawable.switch_button_sliding_btn_slider_off_light);
+        mSliderOn = getResources()
+                .getDrawable(R.drawable.switch_button_sliding_btn_slider_on_light);
+        mSliderOff = getResources()
+                .getDrawable(R.drawable.switch_button_sliding_btn_slider_off_light);
         setBackgroundResource(R.drawable.switch_button_sliding_btn_bg_light);
 
         mWidth = mFrame.getIntrinsicWidth();
@@ -157,21 +159,24 @@ public class SwitchButton extends CheckBox {
         mSliderOffset = mSliderPositionStart;
 
         BitmapDrawable slideOff = new BitmapDrawable(getResources(),
-                BitmapFactory.decodeResource(getResources(), R.drawable.switch_button_sliding_btn_bar_off_light));
+                BitmapFactory.decodeResource(getResources(),
+                        R.drawable.switch_button_sliding_btn_bar_off_light));
         mBarOff = Bitmap.createScaledBitmap(slideOff.getBitmap(),
                 mWidth * 2 - mSliderWidth,
                 mHeight,
                 true);
 
         BitmapDrawable slidingOn = new BitmapDrawable(getResources(),
-                BitmapFactory.decodeResource(getResources(), R.drawable.switch_button_sliding_btn_bar_on_light));
+                BitmapFactory.decodeResource(getResources(),
+                        R.drawable.switch_button_sliding_btn_bar_on_light));
         mBarOn = Bitmap.createScaledBitmap(slidingOn.getBitmap(),
                 mWidth * 2 - mSliderWidth,
                 mHeight,
                 true);
         mFrame.setBounds(0, 0, mWidth, mHeight);
 
-        Drawable maskDrawable = getResources().getDrawable(R.drawable.switch_button_sliding_btn_mask_light);
+        Drawable maskDrawable = getResources()
+                .getDrawable(R.drawable.switch_button_sliding_btn_mask_light);
         maskDrawable.setBounds(0, 0, mWidth, mHeight);
         mMask = convertToAlphaMask(maskDrawable);
 

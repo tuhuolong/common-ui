@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.widget;
+package app.lib.commonui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,7 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.chenhao.lib.commonui.R;
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.

@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.banner;
+package app.lib.commonui.banner;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.chenhao.lib.commonui.R;
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.

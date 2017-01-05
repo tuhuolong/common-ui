@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.nestedscroll;
+package app.lib.commonui.nestedscroll;
 
 import android.content.Context;
 import android.support.v4.view.NestedScrollingParent;

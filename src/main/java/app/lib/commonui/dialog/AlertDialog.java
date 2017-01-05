@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.dialog;
+package app.lib.commonui.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -22,10 +22,10 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.chenhao.lib.commonui.R;
-
 import java.util.Timer;
 import java.util.TimerTask;
+
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.
@@ -616,8 +616,8 @@ public class AlertDialog extends Dialog implements DialogInterface {
          *
          * @param cursor The {@link android.database.Cursor} to supply the list of items
          * @param listener The listener that will be called when an item is clicked.
-         * @param labelColumn The column name on the alert_dialog_cursor containing the string to display in the
-         *            label.
+         * @param labelColumn The column name on the alert_dialog_cursor containing the string to
+         *            display in the label.
          * @return This Builder object to allow for chaining of calls to set methods
          */
         public Builder setCursor(final Cursor cursor, final OnClickListener listener,
@@ -684,11 +684,11 @@ public class AlertDialog extends Dialog implements DialogInterface {
          * dismiss the dialog. Clicking on a button will dismiss the dialog.
          *
          * @param cursor the alert_dialog_cursor used to provide the items.
-         * @param isCheckedColumn specifies the column name on the alert_dialog_cursor to use to determine
-         *            whether a checkbox is checked or not. It must return an integer value where 1
-         *            means checked and 0 means unchecked.
-         * @param labelColumn The column name on the alert_dialog_cursor containing the string to display in the
-         *            label.
+         * @param isCheckedColumn specifies the column name on the alert_dialog_cursor to use to
+         *            determine whether a checkbox is checked or not. It must return an integer
+         *            value where 1 means checked and 0 means unchecked.
+         * @param labelColumn The column name on the alert_dialog_cursor containing the string to
+         *            display in the label.
          * @param listener notified when an item on the list is clicked. The dialog will not be
          *            dismissed when an item is clicked. It will only be dismissed if clicked on a
          *            button, if no buttons are supplied it's up to the user to dismiss the dialog.
@@ -736,8 +736,8 @@ public class AlertDialog extends Dialog implements DialogInterface {
          *
          * @param cursor the alert_dialog_cursor to retrieve the items from.
          * @param checkedItem specifies which item is checked. If -1 no items are checked.
-         * @param labelColumn The column name on the alert_dialog_cursor containing the string to display in the
-         *            label.
+         * @param labelColumn The column name on the alert_dialog_cursor containing the string to
+         *            display in the label.
          * @param listener notified when an item on the list is clicked. The dialog will not be
          *            dismissed when an item is clicked. It will only be dismissed if clicked on a
          *            button, if no buttons are supplied it's up to the user to dismiss the dialog.

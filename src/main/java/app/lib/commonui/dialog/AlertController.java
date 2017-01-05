@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.dialog;
+package app.lib.commonui.dialog;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
@@ -35,9 +35,9 @@ import android.widget.ScrollView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import com.chenhao.lib.commonui.R;
-
 import java.lang.ref.WeakReference;
+
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.

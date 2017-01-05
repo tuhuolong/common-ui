@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.widget;
+package app.lib.commonui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chenhao.lib.commonui.R;
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/28.
@@ -62,7 +62,8 @@ public class SettingItemView extends FrameLayout
         mTitleTextView = (TextView) itemView.findViewById(R.id.settings_item_title);
         mSubTitleTextView = (TextView) itemView.findViewById(R.id.settings_item_sub_title);
         mItemIndicator = (TextView) itemView.findViewById(R.id.setting_item_indicator);
-        mSwitchButton = (SwitchButton) itemView.findViewById(R.id.settings_item_switch_btn);
+        mSwitchButton = (SwitchButton) itemView
+                .findViewById(R.id.settings_item_switch_btn);
         mSettingsItemCheckbox = (CheckBox) itemView.findViewById(R.id.settings_item_checkbox);
         mOnclickImageView = (ImageView) itemView.findViewById(R.id.settings_item_arrow);
         mValueTextView = (TextView) itemView.findViewById(R.id.settings_item_value);

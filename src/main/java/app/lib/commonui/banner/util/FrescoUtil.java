@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.banner.util;
+package app.lib.commonui.banner.util;
 
 import android.graphics.drawable.Animatable;
 import android.net.Uri;

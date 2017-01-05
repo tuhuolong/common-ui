@@ -1,5 +1,5 @@
 
-package com.chenhao.lib.commonui.widget;
+package app.lib.commonui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chenhao.lib.commonui.R;
+import app.lib.commonui.R;
 
 /**
  * Created by chenhao on 16/12/30.
