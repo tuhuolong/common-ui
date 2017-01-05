@@ -21,7 +21,7 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.widget.CheckBox;
 
-import com.chenhao.lib.common.util.ApiHelper;
+import com.chenhao.lib.common.util.AndroidApiHelper;
 import com.chenhao.lib.commonui.R;
 
 /**
@@ -101,7 +101,7 @@ public class SwitchButton extends CheckBox {
     public SwitchButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
-        if (ApiHelper.HAS_ANDROID_ANIMATION) {
+        if (AndroidApiHelper.HAS_ANDROID_ANIMATION) {
             mAnimatorListener = new AnimatorListenerAdapter() {
                 private boolean mCanceled;
 
@@ -300,7 +300,7 @@ public class SwitchButton extends CheckBox {
 
     @SuppressLint("NewApi")
     protected void animateToState(final boolean isChecked) {
-        if (ApiHelper.HAS_ANDROID_ANIMATION) {
+        if (AndroidApiHelper.HAS_ANDROID_ANIMATION) {
             if (mAnimator != null) {
                 mAnimator.cancel();
                 mAnimator = null;
