@@ -64,7 +64,7 @@
             android:visibility="gone" />
     </LinearLayout>
 
-    <com.chenhao.lib.commonui.widget.SwitchButton
+    <app.lib.commonui.widget.SwitchButton
         android:id="@+id/settings_item_switch_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

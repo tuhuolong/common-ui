@@ -25,7 +25,7 @@
                 android:layout_height="20dip"
                 android:layout_gravity="center_vertical" />
 
-            <com.chenhao.lib.commonui.widget.CircleProgressBar
+            <app.lib.commonui.widget.CircleProgressBar
                 android:id="@+id/determinate_progress"
                 android:layout_width="20dip"
                 android:layout_height="20dip"
