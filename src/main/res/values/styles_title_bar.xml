@@ -23,4 +23,45 @@
         <item name="android:textColor">@color/title_bar_secondary_sub_title_text_color</item>
     </style>
 
+    <style name="TitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+    </style>
+
+    <style name="TitleBar.LeftButton">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">15dp</item><!--增大点击区域-->
+        <item name="android:paddingRight">13dp</item><!--增大点击区域-->
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/class_V</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+    </style>
+
+    <style name="TitleBar.TitleButton">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TitleBarText</item>
+    </style>
+
+    <style name="TitleBar.RightButton">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingRight">10dp</item><!--增大点击区域-->
+        <item name="android:paddingLeft">10dp</item><!--增大点击区域-->
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/class_V</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+    </style>
+
 </resources>
